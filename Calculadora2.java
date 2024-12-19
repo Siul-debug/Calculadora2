@@ -15,10 +15,17 @@ public class Calculadora2 {
     case '*':
     resultado = num1 * num2;
     break;
+    case '/':
+    if (num2 == 0) {
+    System.out.println("Error: División entre cero");
+    } else {
+    resultado = num1 / num2;
+    }
+    break;
     default:
     System.out.println("Operador inválido");
     return;
     }
     System.out.println("Resultado: " + resultado);
     }
-}
+    }
